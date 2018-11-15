@@ -1,0 +1,75 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+body {
+  font-family: $exo2-font;
+  font-size: 14px;
+}
+
+// Sidebar
+
+.nav-sidebar {
+  position: relative;
+  max-width: 250px;
+  height: auto;
+  overflow: auto;
+  padding: 0;
+  z-index: 100;
+  background: #1c252c;
+  color: #fff;
+
+    .logo {
+      margin: 40px 0;
+      padding: 0 20px;
+    
+      img {
+        max-height: 80px;
+        width: 100%;
+      }
+    }
+
+    .nav {
+      border-top: 1px solid #3e484e;
+
+      a.nav-main-item {
+        padding: 15px 20px;
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+
+        &:hover { background: #5cab3b; }
+
+        span { line-height: 1; }
+
+        
+        &.collapsed i.fa-angle-up:before { content: "\f107"; }
+        
+        
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+
+        a.nav-link {
+          color: #fff;
+          text-decoration: none;
+          padding: 6px 45px;
+          font-size: 13px;
+          font-weight: 300;
+          
+          &:hover{ background: #484848;}
+        }
+      }
+      
+  
+
+  }
+}
+
+main.content section {
+  margin-bottom: 50px;
+}
