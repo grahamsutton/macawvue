@@ -4,6 +4,7 @@
         <!-- logo container -->
         <div class="py-3 logo-ct">
             <a href="">
+              <img src="../assets/macaw-logo.png" />
             </a>
         </div>
         <!-- / logo container -->
