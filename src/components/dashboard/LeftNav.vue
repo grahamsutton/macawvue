@@ -26,7 +26,7 @@
                     <router-link to="/introduction/about" class="nav-link">About</router-link>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="introduction/faq.html">FAQ</a>
+                    <router-link to="/introduction/faq" class="nav-link">FAQ</router-link>
                   </li>
               </ul>
               <!-- / introduction menu -->            
@@ -36,28 +36,28 @@
                     <a href="standards/standards.html">Standards</a>
                 </li><!-- Parent option -->
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/voice-tone.html">Voice &amp; Tone</a>
+                    <router-link to="/standards/voice-tone" class="nav-link">Voice &amp; Tone</router-link>
                 </li>   
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/grammar-punctuations.html">Grammar &amp; Punctuation</a>
+                    <router-link to="/standards/grammar-punctuation" class="nav-link">Grammar &amp; Punctuation</router-link>
                 </li>  
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/browser-support.html">Browser Support</a>
+                    <router-link to="/standards/browser-support" class="nav-link">Browser Support</router-link>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/ext.html">EXT</a>
+                    <router-link to="/standards/ext" class="nav-link">EXT</router-link>
                 </li> 
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/landing-page.html">Landing Page</a>
+                    <router-link to="/standards/landing-page" class="nav-link">Landing Page</router-link>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/master-theming.html">Master Theming</a>
+                    <router-link to="/standards/master-theming" class="nav-link">Master Theming</router-link>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/mwp.html">My Web Pages</a>
+                    <router-link to="/standards/mwp" class="nav-link">My Web Pages</router-link>
                 </li> 
                 <li class="nav-item ">
-                    <a class="nav-link" href="standards/print.html">Print</a>
+                    <router-link to="/standards/print" class="nav-link">Print</router-link>
                 </li>   
             </ul>
             <!-- / standards menu -->            
@@ -67,25 +67,25 @@
                   <a class="nav-link" href="layout/layout-style.html">Layout &amp; Style</a>
               </li><!-- Parent option -->
               <li class="nav-item ">
-                  <a class="nav-link" href="layout/color.html">Color</a>
+                  <router-link to="/layout-style/color" class="nav-link">Color</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="layout/grids.html">Grids</a>
+                  <router-link to="/layout-style/grids" class="nav-link">Grids</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="layout/header.html">Header</a>
+                  <router-link to="/layout-style/header" class="nav-link">Header</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="layout/iconography.html">Iconography</a>
+                  <router-link to="/layout-style/iconography" class="nav-link">Iconography</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="layout/layout.html">Layout</a>
+                  <router-link to="/layout-style/layout" class="nav-link">Layout</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="layout/spacing.html">Spacing</a>
+                  <router-link to="/layout-style/spacing" class="nav-link">Spacing</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="layout/typography.html">Typography</a>
+                  <router-link to="/layout-style/typography" class="nav-link">Typography</router-link>
               </li>                      
             </ul>
             <!-- / layout & style menu -->            
@@ -95,64 +95,64 @@
                   <a class="nav-link" href="components/components.html">Components</a>
               </li><!-- Parent option -->
               <li class="nav-item ">
-                  <a class="nav-link" href="components/accordion.html">Accordion</a>
+                  <router-link to="/components/accordion" class="nav-link">Accordion</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/badges.html">Badges</a>
+                  <router-link to="/components/badges" class="nav-link">Badges</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="components/buttons.html">Buttons</a>
+                  <router-link to="/components/buttons" class="nav-link">Buttons</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/dialogs.html">Dialogs</a>
+                  <router-link to="/components/dialogs" class="nav-link">Dialogs</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/modal.html">Modal</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link" href="components/dropdowns.html">Dropdowns</a>
+                  <router-link to="/components/dropdowns" class="nav-link">Dropdowns</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="components/errors.html">Errors</a>
+                  <router-link to="/components/errors" class="nav-link">Errors</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/file-uploader.html">File Uploader</a>
+                  <router-link to="/components/file-uploader" class="nav-link">File Uploader</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="components/form-elements.html">Form Elements</a>
+                  <router-link to="/components/form-elements" class="nav-link">Form Elements</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/lists.html">Lists</a>
+                  <router-link to="/components/lists" class="nav-link">Lists</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="components/loading.html">Loading</a>
+                  <router-link to="/components/loading" class="nav-link">Loading</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/messages.html">Messages</a>
-              </li>  
+                  <router-link to="/components/messages" class="nav-link">Messages</router-link>
+              </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/panels.html">Panels</a>
+                  <router-link to="/components/modal" class="nav-link">Modal</router-link>
+              </li>
+              <li class="nav-item ">
+                  <router-link to="/components/panels" class="nav-link">Panels</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="components/reorder.html">Reorder</a>
+                  <router-link to="/components/reorder" class="nav-link">Reorder</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/stats-data.html">Stats &amp; Data</a>
+                  <router-link to="/components/stats-data" class="nav-link">Stats &amp; Data</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="components/steps.html">Steps</a>
+                  <router-link to="/components/steps" class="nav-link">Steps</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/tables.html">Tables</a>
+                  <router-link to="/components/tables" class="nav-link">Tables</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/tabs.html">Tabs</a>
+                  <router-link to="/components/tabs" class="nav-link">Tabs</router-link>
               </li> 
               <li class="nav-item ">
-                  <a class="nav-link" href="components/tooltips.html">Tooltips</a>
+                  <router-link to="/components/tooltips" class="nav-link">Tooltips</router-link>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="components/well.html">Well</a>
+                  <router-link to="/components/well" class="nav-link">Well</router-link>
               </li>                     
             </ul>
             <!-- / components menu -->
