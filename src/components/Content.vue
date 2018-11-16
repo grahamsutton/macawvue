@@ -4,7 +4,7 @@
       <div class="row">
         <!-- main container block -->
         <div class="col-12 col-md-12 order-md-1 col-lg-7 offset-lg-1 py-5">
-        Content
+          <slot></slot>
         </div>
       </div>
   </div>

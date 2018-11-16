@@ -19,10 +19,10 @@
               <!-- introduction menu -->
               <ul class="nav flex-column list-group py-3 mb-0">
                   <li class="nav-item parent-option active">
-                    <a class="nav-link" href="">Introduction</a>
+                    <router-link to="/" class="nav-link">Introduction</router-link>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="introduction/about.html">About</a>
+                    <router-link to="/introduction/about" class="nav-link">About</router-link>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="introduction/faq.html">FAQ</a>
