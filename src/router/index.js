@@ -1,17 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Top from '@/components/Top'
-import LeftNav from '@/components/LeftNav'
-import Content from '@/components/Content'
-import Bottom from '@/components/Bottom'
+
+import Welcome from '@/views/introduction/Welcome.vue'
+import About from '@/views/introduction/About.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    { path: '/', name: 'Top', component: Top },
-    { path: '/', name: 'LeftNav', component: LeftNav },
-    { path: '/', name: 'Content', component: Content },
-    { path: '/', name: 'Bottom', component: Bottom }
+    {
+      path: '/',
+      name: 'Welcome',
+      component: Welcome
+    },
+    {
+      path: '/introduction/about',
+      name: 'About',
+      component: About
+    }
   ]
 })
