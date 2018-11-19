@@ -35,5 +35,18 @@ h1, h2, h3, h4, h5, h6,
       font-weight: 300;
     }
   }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .auxiliar-nav-ct {
+    background: #f8f9fd;
+    position: relative;
+
+    .content-aux-nav {
+      position: fixed;
+    }
+  }
 }
 </style>
