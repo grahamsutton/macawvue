@@ -2,7 +2,7 @@
   <dashboard>
     <div class="row">
       <!-- main container block -->
-      <div class="col-12 col-md-12 order-md-1 col-lg-7 offset-lg-1 py-5">
+      <div class="col-12 col-md-12 order-md-1 col-lg-10 offset-lg-1 py-5">
         <!-- Here goes the content of the About page -->
         <div class="row">
           <div class="col-12 col-lg-10 titles-ct mt-0">

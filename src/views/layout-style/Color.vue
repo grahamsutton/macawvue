@@ -1,6 +1,13 @@
 <template>
   <dashboard>
-    <div class="col-12 col-md-12 order-md-1 col-lg-7 offset-lg-1 py-5">
+    <!-- inner navigation -->
+  <div class="col order-md-2 col-lg-4 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
+      <div class="content-aux-nav multiple-items">
+      </div>
+  </div>
+  <!-- / inner navigation -->
+  <!-- main container block -->
+  <div class="col-12 col-md-8 order-md-1 col-lg-7 offset-lg-1 py-5" id="nav-scroller" ref="content">
       <!-- Here goes the content of the Color page -->
       <div class="row">
         <div class="col-12 col-lg-10 titles-ct mt-0">
