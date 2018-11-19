@@ -25,6 +25,7 @@ import Layout from '@/views/layout-style/Layout.vue'
 import Spacing from '@/views/layout-style/Spacing.vue'
 import Typography from '@/views/layout-style/Typography.vue'
 
+// Components
 import Accordion from '@/views/components/Accordion.vue'
 import Badges from '@/views/components/Badges.vue'
 import Buttons from '@/views/components/Buttons.vue'
@@ -45,6 +46,9 @@ import Tables from '@/views/components/Tables.vue'
 import Tabs from '@/views/components/Tabs.vue'
 import Tooltips from '@/views/components/Tooltips.vue'
 import Well from '@/views/components/Well.vue'
+
+// Error Pages
+import NotFound from '@/views/errors/NotFound.vue'
 
 Vue.use(Router)
 
@@ -247,6 +251,13 @@ export default new Router({
       path: '/components/well',
       name: 'Well',
       component: Well
+    },
+
+    // Error Pages
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
