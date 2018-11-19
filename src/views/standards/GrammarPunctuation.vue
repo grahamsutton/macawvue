@@ -2,43 +2,39 @@
   <dashboard>
     <div class="row">
       <!-- inner navigation -->
-      <div class="col-12 col-md-4 order-md-2 col-lg-3 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
+      <div class="col order-md-2 col-lg-4 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
         <div class="content-aux-nav multiple-items">
-          <h5>CONTENTS</h5>
           <form>
             <div class="form-group m-0">
               <div class="dropdown p-2">
-                <!-- <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Quick Links
-                </button> -->
-                <b-nav vertical pills v-b-scrollspy:nav-scroller>
-                  <b-nav-item @click="scrollIntoView" href="#item-0">Abbreviations and acronyms</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-1">Active voice</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-2">Buttons</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-3">Capitalization</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-4">Character Count</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-5">Checkboxes</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-6">Contractions</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-7">Currency</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-8">Dates</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-9">Decimals</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-10">Drop-down menus</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-11">Emoji</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-12">Headings and subheadings</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-13">Links</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-14">Lists</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-15">Percentages</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-16">Pronouns</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-17">Punctuation</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-18">File extensions</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-19">Radio Buttons</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-20">Ranges and spans</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-21">Slang and jargon</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-22">Telephone numbers</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-23">Text formatting</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-24">Time</b-nav-item>
-                  <b-nav-item @click="scrollIntoView" href="#item-25">Tooltips</b-nav-item>
-                </b-nav>
+                  <b-dropdown v-b-scrollspy:nav-scroller id="dropdownMenuButton" data-toggle="dropdown" text="Dropdown Button" class="m-md-2">
+                  <b-dropdown-item @click="scrollIntoView" href="#item-1">Active voice</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-2">Buttons</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-3">Capitalization</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-4">Character Count</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-5">Checkboxes</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-6">Contractions</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-7">Currency</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-8">Dates</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-9">Decimals</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-10">Drop-down menus</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-11">Emoji</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-12">Headings and subheadings</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-13">Links</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-14">Lists</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-15">Percentages</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-16">Pronouns</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-17">Punctuation</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-18">File extensions</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-19">Radio Buttons</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-20">Ranges and spans</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-21">Slang and jargon</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-22">Telephone numbers</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-23">Text formatting</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-24">Time</b-dropdown-item>
+                  <b-dropdown-item @click="scrollIntoView" href="#item-25">Tooltips</b-dropdown-item>
+                </b-dropdown>
+                
               </div>
             </div>
           </form>
