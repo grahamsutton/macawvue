@@ -19,7 +19,7 @@
             <ul class="nav flex-column">                
               <!-- introduction menu -->
               <ul class="nav flex-column list-group py-3 mb-0">
-                  <li class="nav-item parent-option active">
+                  <li class="nav-item parent-option">
                     <router-link to="/" class="nav-link">Introduction</router-link>
                   </li>
                   <li class="nav-item ">
@@ -161,12 +161,6 @@
       </nav>
       <!-- / main menu container -->    
     </div>
-    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
-      <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-    </div>
-    <div class="ps__rail-y" style="top: 0px; height: 754px; right: 0px;">
-      <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 369px;"></div>
-    </div>
   </header>
 </template>
 
@@ -271,7 +265,7 @@ header.main-header-ct {
 
           }
 
-          &.active {
+          &.active, .router-link-active {
             position: relative;
 
             &:after {
