@@ -189,6 +189,7 @@ header.main-header-ct {
     border-right: 1px solid #ededed;
     height: 100%;
     position: fixed;
+    overflow-y: auto;
   }
 
   .logo-ct {
