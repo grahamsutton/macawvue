@@ -20,7 +20,7 @@
               <!-- introduction menu -->
               <ul class="nav flex-column list-group py-3 mb-0">
                   <li class="nav-item parent-option ">
-                    <router-link to="/" class="nav-link">Introduction</router-link>
+                    <router-link to="/introduction/" class="nav-link">Introduction</router-link>
                   </li>
                   <li class="nav-item ">
                     <router-link to="/introduction/about" class="nav-link">About</router-link>
@@ -95,6 +95,9 @@
                   <a class="nav-link" href="components/components.html">Components</a>
               </li><!-- Parent option -->
               <li class="nav-item ">
+                  <router-link to="/components/alerts" class="nav-link">Alerts</router-link>
+              </li>
+              <li class="nav-item ">
                   <router-link to="/components/accordion" class="nav-link">Accordion</router-link>
               </li>
               <li class="nav-item ">
@@ -102,9 +105,6 @@
               </li> 
               <li class="nav-item ">
                   <router-link to="/components/buttons" class="nav-link">Buttons</router-link>
-              </li>
-              <li class="nav-item ">
-                  <router-link to="/components/dialogs" class="nav-link">Dialogs</router-link>
               </li>
               <li class="nav-item ">
                   <router-link to="/components/dropdowns" class="nav-link">Dropdowns</router-link>
@@ -170,7 +170,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
 /* 2. Header ==================== */

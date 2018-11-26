@@ -26,10 +26,10 @@ import Spacing from '@/views/layout-style/Spacing.vue'
 import Typography from '@/views/layout-style/Typography.vue'
 
 // Components
+import Alerts from '@/views/components/Alerts.vue'
 import Accordion from '@/views/components/Accordion.vue'
 import Badges from '@/views/components/Badges.vue'
 import Buttons from '@/views/components/Buttons.vue'
-import Dialogs from '@/views/components/Dialogs.vue'
 import Dropdowns from '@/views/components/Dropdowns.vue'
 import Errors from '@/views/components/Errors.vue'
 import FileUploader from '@/views/components/FileUploader.vue'
@@ -153,6 +153,11 @@ export default new Router({
 
     // Components
     {
+      path: '/components/alerts',
+      name: 'Alerts',
+      component: Alerts
+    },
+    {
       path: '/components/accordion',
       name: 'Accordion',
       component: Accordion
@@ -166,11 +171,6 @@ export default new Router({
       path: '/components/buttons',
       name: 'Buttons',
       component: Buttons
-    },
-    {
-      path: '/components/dialogs',
-      name: 'Dialogs',
-      component: Dialogs
     },
     {
       path: '/components/dropdowns',

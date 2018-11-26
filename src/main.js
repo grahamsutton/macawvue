@@ -4,10 +4,13 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
+import vueHljs from 'vue-hljs'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'vue-hljs/dist/vue-hljs.min.css'
 
 Vue.use(BootstrapVue)
+Vue.use(vueHljs)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
