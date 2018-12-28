@@ -1,5 +1,5 @@
 <template>
-  <dashboard>
+  <div>
   	<!-- inner navigation -->
 	<div class="col order-md-2 col-lg-4 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
 	    <div class="content-aux-nav multiple-items">
@@ -36,15 +36,5 @@
 	    	</div>
 	   	</div>
     </div>
-  </dashboard>
+  </div>
 </template>
-
-<script>
-import Dashboard from '@/components/dashboard/Dashboard.vue'
-
-export default {
-  components: {
-    Dashboard
-  }
-}
-</script>

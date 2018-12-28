@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <dashboard>
+      <router-view></router-view>
+    </dashboard>
   </div>
 </template>
 
 <script>
+import Dashboard from './components/dashboard/Dashboard.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+
+  components: {
+    Dashboard
+  }
 }
 </script>
 

@@ -1,5 +1,4 @@
 <template>
-  <dashboard>
     <div class="row">
       <!-- inner navigation -->
       <div class="col order-md-2 col-lg-4 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
@@ -74,7 +73,6 @@
  	  </div>
       <!-- / main container block -->
     </div>
-  </dashboard>
 </template>
 
 <script>

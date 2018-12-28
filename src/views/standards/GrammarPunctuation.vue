@@ -1,5 +1,5 @@
 <template>
-  <dashboard>
+  <div>
     <div class="row">
       <!-- inner navigation -->
       <div class="col order-md-2 col-lg-4 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
@@ -615,17 +615,11 @@
       </div>
       <!-- / main container block -->
     </div>
-  </dashboard>
+  </div>
 </template>
 
 <script>
-import Dashboard from '@/components/dashboard/Dashboard.vue'
-
 export default {
-  components: {
-    Dashboard
-  },
-
   methods: {
     scrollIntoView (evt) {
       evt.preventDefault()
