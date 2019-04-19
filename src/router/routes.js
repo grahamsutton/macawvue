@@ -68,21 +68,21 @@ export default [
   // Standards
   {
     path: '/standards/voice-tone',
-    name: 'VoiceTone',
+    name: 'Voice & Tone',
     component: VoiceTone,
     section: 'standards',
     active: true
   },
   {
     path: '/standards/grammar-punctuation',
-    name: 'GrammarPunctuation',
+    name: 'Grammar & Punctuation',
     component: GrammarPunctuation,
     section: 'standards',
     active: true
   },
   {
     path: '/standards/browser-support',
-    name: 'BrowserSupport',
+    name: 'Browser Support',
     component: BrowserSupport,
     section: 'standards',
     active: true
@@ -96,21 +96,21 @@ export default [
   },
   {
     path: '/standards/landing-page',
-    name: 'LandingPage',
+    name: 'Landing Page',
     component: LandingPage,
     section: 'standards',
     active: true
   },
   {
     path: '/standards/master-theming',
-    name: 'MasterTheming',
+    name: 'Master Theming',
     component: MasterTheming,
     section: 'standards',
     active: true
   },
   {
     path: '/standards/mwp',
-    name: 'MyWebPages',
+    name: 'My Web Pages',
     component: MyWebPages,
     section: 'standards',
     active: true
