@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LeftNav />
+    <Sidebar />
     <!-- section (right block)-->
     <div class="col-12 col-lg-10 offset-lg-2 section-ct bg-white">
       <slot></slot>
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import LeftNav from './LeftNav'
+import Sidebar from './Sidebar'
 
 export default {
   components: {
-    LeftNav
+    Sidebar
   }
 }
 </script>
