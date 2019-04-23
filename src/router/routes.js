@@ -30,6 +30,7 @@ import Dropdowns from '@/views/elements/Dropdowns.vue'
 import Errors from '@/views/elements/Errors.vue'
 import FileUploader from '@/views/elements/FileUploader.vue'
 import FormElements from '@/views/elements/FormElements.vue'
+import Icons from '@/views/elements/Icons.vue'
 import Lists from '@/views/elements/Lists.vue'
 import Loading from '@/views/elements/Loading.vue'
 import Messages from '@/views/elements/Messages.vue'
@@ -230,6 +231,13 @@ export default [
     component: FormElements,
     section: 'elements',
     active: false
+  },
+  {
+    path: '/elements/icons',
+    name: 'Icons',
+    component: Icons,
+    section: 'elements',
+    active: true
   },
   {
     path: '/elements/lists',
