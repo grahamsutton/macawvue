@@ -83,6 +83,16 @@
 
         <div class="col-12 my-5" id="how-to-use">
           <h3>Basic Example</h3>
+          <p>Import the <code>Modal</code> component from the <code>@sproutloud/macaw</code> package into the <code>components</code> section of your Vue component. This will allow you to use the <code>&lt;modal&gt;</code> tag to render a modal.</p>
+          <p>Declare a local boolean variable to manage the visibility of the modal in your Vue component (e.g. <code>showModal</code> in this example).</p>
+          <p>You can also import a <code>Button</code> and attach a click handler (e.g. <code>@click</code>) which accepts a JavaScript statement or method to execute when the button is clicked. In this case, we would use this handler to set <code>showModal = true</code> to force the modal to show.</p>
+          <p>You can also add a close handler (e.g. <code>@close</code>) to pass in a callback for what the modal should do when a close button is clicked. In this case, we want to hide the modal (by setting <code>showModal = false</code>) when a close button is clicked.</p>
+
+          <notification variant="warning">
+            <p>Remember: a modal is simply a <em>presentational</em> component. It does not contain logic on how to manage its visibility internally because <em>when</em> a modal should become visible is dependent on what <em>you</em> are doing. This is why it is your responsibiilty to determine when to show and hide it.</p>
+            <p class="mb-0">To understand more about Container vs. Presentational components, <a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">click here</a>.</p>
+          </notification>
+
           <!-- Live Example container -->
           <div class="live-example-ct border mt-3 p-3 rounded-top">
             <sl-button @click="showModal = true">
@@ -152,6 +162,7 @@ import EventsTable from '@/components/EventsTable.vue'
 import EventsTableRow from '@/components/EventsTableRow.vue'
 import PropsTable from '@/components/PropsTable.vue'
 import PropsTableRow from '@/components/PropsTableRow.vue'
+import Notification from '@/elements/Notification.vue'
 import Button from '@/elements/Button.vue'
 import Modal from '@/elements/Modal.vue'
 
@@ -161,6 +172,7 @@ export default {
     EventsTableRow,
     PropsTable,
     PropsTableRow,
+    Notification,
     'sl-button': Button,
     Modal
   },
@@ -210,6 +222,8 @@ export default {
         <modal :visible="showCustomFooterModal" @close="showCustomFooterModal = false">
           <h2 slot="header">This is a much longer modal title.</h2>
           <div>This is modal content.</div>
+
+          <!-- Custom Footer -->
           <div slot="footer">
             <p>This is a custom footer.</p>
             <sl-button @click="showCustomFooterModal = false" variant="link">My Own Option 1</sl-button>

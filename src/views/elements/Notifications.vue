@@ -45,6 +45,13 @@
           </props-table>
         </div>
       </div>
+
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <h3>Examples</h3>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-12" id="how-to-use">
           <!-- Live Example container -->
@@ -55,6 +62,15 @@
             <notification variant="danger">This is an error notification.</notification>
           </div>
           <!-- / Live Example container -->
+
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <h3>How to Use</h3>
+              <p>Import the <code>Notification</code> component from the <code>@sproutloud/macaw</code> package into the <code>components</code> section of your Vue component. This will allow you to use the <code>&lt;notification&gt;</code> tag to render a notification.</p>
+
+              <p>To change the color and style of the notification, you can pass an acceptable value (check the Props section for valid values) to the <code>variant</code> prop. Based on the variant, the icon will change automatically. If you need a custom type of notification, please contact your team's UI developer so that we can determine a proper solution.</p>
+            </div>
+          </div>
 
           <!-- Code Example container -->
           <div v-highlight>

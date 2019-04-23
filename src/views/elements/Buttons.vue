@@ -62,14 +62,31 @@
         </div>
       </div>
 
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <h3>Examples</h3>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-12 my-5" id="how-to-use">
+        <div class="col-12 my-2" id="how-to-use">
           <!-- Live Example container -->
           <div class="live-example-ct rounded-top">
             <sl-button variant="primary" @click="handleClick">Primary Button</sl-button>
             <sl-button variant="link">Link Button</sl-button>
           </div>
           <!-- / Live Example container -->
+
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <h3>How to Use</h3>
+              <p>Import the <code>Button</code> component from the <code>@sproutloud/macaw</code> package into the <code>components</code> section of your Vue component. You will need to provide an alias for this type of component so that it does not conflict with HTML's <code>&lt;button&gt;</code>. You can provide an alias simply by providing a key in the components section where you register your Vue components with the desired alias for the tag.
+
+              <p>This will allow you to use the <code>&lt;your-alias&gt;</code> tag to render a button. In the example below, we use <code>'sl-button'</code> as our alias for the button component, which allows us to render a button using <code>&lt;sl-button&gt;</code>.</p>
+
+              <p>You can also use the <code>variant</code> property to change the color and style of a button.</p>
+            </div>
+          </div>
 
           <!-- Code Example container -->
           <div v-highlight>

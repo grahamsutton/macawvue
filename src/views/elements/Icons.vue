@@ -90,9 +90,14 @@
         </div>        
       </div>
 
-      <div class="row mt-4">
+      <div class="row mt-5">
         <div class="col-md-12">
           <h3>How to Use</h3>
+          <p>Import the <code>Icon</code> component from the <code>@sproutloud/macaw</code> package into the <code>components</code> section of your Vue component. This will allow you to use the <code>&lt;icon&gt;</code> tag to render an icon.</p>
+
+          <p>To change the color of an icon, you can also pass a value to the <code>fill</code> property, which accepts <code>rgb</code>, <code>rgba</code>, or a hex value as a string, exactly the same as what you would use in CSS.</p>
+
+          <p>To change the size of an icon, there are three values avaialble to you: <code>small</code>, <code>medium</code>, and <code>large</code>. This should be sufficient for most of your use cases, but if you require a custom size, please speak with your UI developer so we can determine a proper solution.</p>
         </div>
       </div>
 
