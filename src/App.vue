@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss">
 @import "./styles/variables.scss";
+@import "./styles/mixins.scss";
 
 body {
   font-family: $exo2-font;

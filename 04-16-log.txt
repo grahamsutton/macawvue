@@ -1,0 +1,85 @@
+16-Apr-19 15:45:33 INFO  Scheduling a scanning process
+16-Apr-19 15:45:36 INFO  Starting scanning process
+16-Apr-19 15:45:36 INFO  Processing step 1 (0/10)
+16-Apr-19 15:45:36 INFO  Skipping NinjaScanner files integrity check
+16-Apr-19 15:45:36 INFO  Processing step 2 (0/10)
+16-Apr-19 15:45:56 INFO  Building files list
+16-Apr-19 15:45:56 INFO  Total files found: 26554
+16-Apr-19 15:45:56 INFO  Building database posts and pages checksum
+16-Apr-19 15:45:57 INFO  Found 322 posts and 555 pages in the database
+16-Apr-19 15:45:57 INFO  Processing step 3 (0/10)
+16-Apr-19 15:45:57 INFO  Checking WordPress core files integrity
+16-Apr-19 15:46:03 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-config-sample.php
+16-Apr-19 15:46:03 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/license.txt
+16-Apr-19 15:46:04 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-includes/class-wp-http-curl.php
+16-Apr-19 15:46:08 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-admin/includes/class-theme-installer-skin.php
+16-Apr-19 15:46:08 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-admin/includes/class-ftp-pure.php
+16-Apr-19 15:46:11 WARN  Total modified core files: 5
+16-Apr-19 15:46:11 INFO  Processing step 4 (0/10)
+16-Apr-19 15:46:11 INFO  Checking plugin files integrity
+16-Apr-19 15:46:16 WARN  HTTP Error 404. Skipping acf-options-page 2.1.0, it may not be available in the repo
+16-Apr-19 15:46:20 WARN  HTTP Error 404. Skipping gravityforms 2.4.8, it may not be available in the repo
+16-Apr-19 15:46:36 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/plugins/miniorange-saml-20-single-sign-on/readme.txt
+16-Apr-19 15:46:40 WARN  HTTP Error 404. Skipping totalpoll 3.3.3, it may not be available in the repo
+16-Apr-19 15:46:41 WARN  HTTP Error 404. Skipping wordpress-seo-premium 9.1, it may not be available in the repo
+16-Apr-19 15:46:41 WARN  Additional/suspicious files: 1
+16-Apr-19 15:46:41 WARN  Total modified plugin files: 1
+16-Apr-19 15:46:41 INFO  Processing step 5 (0/10)
+16-Apr-19 15:46:41 INFO  Checking theme files integrity
+16-Apr-19 15:46:41 INFO  Building themes list
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/404.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/bootstrap/js/bootstrap.js
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/content-fullsingle.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/content-header.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/content-page-fullwidth.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/content-page-posts.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/content-post-header.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/content-single.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/css/theme-base.css
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/css/theme-flat.css
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/footer.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/functions.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/header.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/inc/class-tgm-plugin-activation.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/inc/custom-header.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/js/theme.js
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/no-results.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/page-fullwidth.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/page-fullwithposts.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/search.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/single-fullwidth.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/single.php
+16-Apr-19 15:46:42 WARN  Checksum mismatch: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/style.css
+16-Apr-19 15:46:43 WARN  HTTP Error 404. Skipping ngse 1.0.0, it may not be available in the repo
+16-Apr-19 15:46:46 WARN  Additional/suspicious files: 340
+16-Apr-19 15:46:46 WARN  Total modified theme files: 23
+16-Apr-19 15:46:46 INFO  Processing step 6 (0/10)
+16-Apr-19 15:46:46 INFO  Comparing previous and current file snapshots
+16-Apr-19 15:46:46 WARN  Total modified files: 16
+16-Apr-19 15:46:46 WARN  Total deleted files: 720
+16-Apr-19 15:46:46 INFO  Processing step 7 (0/10)
+16-Apr-19 15:46:46 INFO  Comparing previous and current database snapshots
+16-Apr-19 15:46:46 INFO  Previous and current snapshots match
+16-Apr-19 15:46:46 INFO  Processing step 8 (0/10)
+16-Apr-19 15:46:46 INFO  Skipping Google Safe Browsing: no API key found
+16-Apr-19 15:46:46 INFO  Processing step 9 (0/10)
+16-Apr-19 15:46:46 INFO  Running anti-malware scanner
+16-Apr-19 15:46:46 INFO  Retrieving signatures lists
+16-Apr-19 15:46:47 INFO  Total loaded signatures: 1091
+16-Apr-19 15:46:47 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-admin/includes/class-ftp-pure.php
+16-Apr-19 15:46:47 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-admin/includes/class-theme-installer-skin.php
+16-Apr-19 15:46:48 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/plugins/bootstrap-3-shortcodes/ukbodgpe.php
+16-Apr-19 15:47:01 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/plugins/wordpress-seo-premium/admin/google_search_console/class-gsc-category-filters.php
+16-Apr-19 15:47:28 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/content-single.php
+16-Apr-19 15:47:34 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/flat-bootstrap/page-find-a-trip-film-video.php
+16-Apr-19 15:47:40 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/themes/ngse/layouts/texhyycb.php
+16-Apr-19 15:48:19 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/uploads/2015/07/tczfbbjy.php
+16-Apr-19 15:48:20 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/uploads/2017/02/owlchivq.php
+16-Apr-19 15:48:20 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/uploads/2017/09/wqhxobfr.php
+16-Apr-19 15:48:21 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/uploads/2018/06/ouunupbp.php
+16-Apr-19 15:48:21 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-content/cache/ogojerzf.php
+16-Apr-19 15:48:21 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-includes/class-wp-http-curl.php
+16-Apr-19 15:48:21 WARN  Potentially unsafe files: /mnt/stor08-wc1-ord1/733958/www.ngstudentexpeditions.com/web/content/wp-config.php
+16-Apr-19 15:48:21 WARN  Total potentially unsafe files: 14
+16-Apr-19 15:48:21 INFO  Processing step 10 (0/10)
+16-Apr-19 15:48:22 INFO  Exiting scanning process

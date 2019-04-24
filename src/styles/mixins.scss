@@ -1,1 +1,57 @@
 // Mixins
+pre {
+	background-color: #f8f8f8;
+	position: relative;
+	border-radius: 2px;
+
+	code {
+	    overflow-x: auto;
+	    color: #525252;
+	    white-space: pre;
+	    padding: 1.2em 1.4em;
+	    line-height: 1.5em;
+	    font-size: 1em;
+	    display: block;
+	}
+}
+.example-code {
+  border-radius: 2px;
+  margin: 1.6em 0;
+  padding: 1.6em;
+
+  .example-header {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  &.good {
+    background: #eaedec;
+    
+    .example-header {
+      color: #677b72;
+    }
+  }
+
+  &.bad {
+    background: #f3eded;
+    
+    .example-header {
+      color: #a67878;
+    }
+  }
+}
+
+.content-aux-nav {
+	position: fixed;
+	top: 8%;
+    right: 4%;
+
+    h5 {
+		background: #2a4a78;
+	    color: #ffffff;
+	    font-size: 14px;
+	    margin-bottom: 0;
+	    padding: 15px 20px;
+	    text-transform: uppercase;
+	}
+}

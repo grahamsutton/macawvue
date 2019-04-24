@@ -1,21 +1,17 @@
-// Introduction
+// Overview
 import About from '@/views/introduction/About.vue'
 import FAQ from '@/views/introduction/FAQ.vue'
 
 // Standards
+import NamingConventions from '@/views/standards/NamingConventions.vue'
 import VoiceTone from '@/views/standards/VoiceTone.vue'
 import GrammarPunctuation from '@/views/standards/GrammarPunctuation.vue'
+import CommonTranslations from '@/views/standards/CommonTranslations.vue'
 import BrowserSupport from '@/views/standards/BrowserSupport.vue'
-import EXT from '@/views/standards/EXT.vue'
-import LandingPage from '@/views/standards/LandingPage.vue'
-import MasterTheming from '@/views/standards/MasterTheming.vue'
-import MyWebPages from '@/views/standards/MyWebPages.vue'
-import Print from '@/views/standards/Print.vue'
 
-// Layout & Style
+// Design
 import Color from '@/views/layout-style/Color.vue'
 import Grids from '@/views/layout-style/Grids.vue'
-import Header from '@/views/layout-style/Header.vue'
 import Iconography from '@/views/layout-style/Iconography.vue'
 import Layout from '@/views/layout-style/Layout.vue'
 import Spacing from '@/views/layout-style/Spacing.vue'
@@ -45,7 +41,8 @@ import Tabs from '@/views/elements/Tabs.vue'
 import Tooltips from '@/views/elements/Tooltips.vue'
 import Well from '@/views/elements/Well.vue'
 
-// Error Pages
+// Templates
+import Header from '@/views/layout-style/Header.vue'
 import NotFound from '@/views/errors/NotFound.vue'
 
 export default [
@@ -68,6 +65,13 @@ export default [
 
   // Standards
   {
+    path: '/standards/naming-conventions',
+    name: 'Naming Conventions',
+    component: NamingConventions,
+    section: 'standards',
+    active: true
+  },
+  {
     path: '/standards/voice-tone',
     name: 'Voice & Tone',
     component: VoiceTone,
@@ -82,49 +86,21 @@ export default [
     active: true
   },
   {
+    path: '/standards/common-translations',
+    name: 'Common Translations',
+    component: CommonTranslations,
+    section: 'standards',
+    active: true
+  },
+  {
     path: '/standards/browser-support',
     name: 'Browser Support',
     component: BrowserSupport,
     section: 'standards',
     active: true
   },
-  {
-    path: '/standards/ext',
-    name: 'EXT',
-    component: EXT,
-    section: 'standards',
-    active: true
-  },
-  {
-    path: '/standards/landing-page',
-    name: 'Landing Page',
-    component: LandingPage,
-    section: 'standards',
-    active: true
-  },
-  {
-    path: '/standards/master-theming',
-    name: 'Master Theming',
-    component: MasterTheming,
-    section: 'standards',
-    active: true
-  },
-  {
-    path: '/standards/mwp',
-    name: 'My Web Pages',
-    component: MyWebPages,
-    section: 'standards',
-    active: true
-  },
-  {
-    path: '/standards/print',
-    name: 'Print',
-    component: Print,
-    section: 'standards',
-    active: true
-  },
 
-  // Layout & Style
+  // Design
   {
     path: '/layout-style/color',
     name: 'Color',
@@ -136,13 +112,6 @@ export default [
     path: '/layout-style/grids',
     name: 'Grids',
     component: Grids,
-    section: 'layout-style',
-    active: true
-  },
-  {
-    path: '/layout-style/header',
-    name: 'Header',
-    component: Header,
     section: 'layout-style',
     active: true
   },
@@ -331,7 +300,14 @@ export default [
     active: false
   },
 
-  // Error Pages
+  // Templates
+  {
+    path: '/layout-style/header',
+    name: 'Header',
+    component: Header,
+    section: 'templates',
+    active: true
+  },
   {
     path: '*',
     name: 'NotFound',

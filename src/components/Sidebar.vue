@@ -25,7 +25,7 @@
             <!-- Introduction -->
             <ul class="nav flex-column list-group py-3 mb-0">
               <li class="nav-item parent-option ">
-                <router-link to="#" class="nav-link">Introduction</router-link>
+                <router-link to="#" class="nav-link">Overview</router-link>
               </li>
               <li v-for="route in activeRoutes('introduction')" class="nav-item ">
                 <router-link :to="route.path" class="nav-link" exact>{{ route.name }}</router-link>
@@ -45,7 +45,7 @@
             <!-- Layout & Style -->
             <ul class="nav flex-column list-group py-3 mb-0">
               <li class="nav-item parent-option ">
-                <a class="nav-link" href="#">Layout &amp; Style</a>
+                <a class="nav-link" href="#">Design</a>
               </li>
               <li v-for="route in activeRoutes('layout-style')" class="nav-item ">
                 <router-link :to="route.path" class="nav-link" exact>{{ route.name }}</router-link>
@@ -58,6 +58,16 @@
                 <a class="nav-link" href="#">Elements</a>
               </li>
               <li v-for="route in activeRoutes('elements')" class="nav-item ">
+                <router-link :to="route.path" class="nav-link" exact>{{ route.name }}</router-link>
+              </li>
+            </ul>
+
+            <!-- Templates -->
+            <ul class="nav flex-column list-group py-3 mb-0">
+              <li class="nav-item parent-option ">
+                <a class="nav-link" href="#">Templates</a>
+              </li>
+              <li v-for="route in activeRoutes('templates')" class="nav-item ">
                 <router-link :to="route.path" class="nav-link" exact>{{ route.name }}</router-link>
               </li>
             </ul>
