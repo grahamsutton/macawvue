@@ -54,4 +54,10 @@ pre {
 	    padding: 15px 20px;
 	    text-transform: uppercase;
 	}
+
+	.list-group-item.active {
+		background-color: #0093c6;
+		border-color: #0093c6;
+		color: #fff;
+	}
 }

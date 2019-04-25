@@ -4,7 +4,7 @@
       <!-- main container block -->
       <div class="col order-md-2 col-lg-3 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
         <div class="content-aux-nav multiple-items">
-          <b-list-group v-b-scrollspy:listgroup-ex>
+          <b-list-group v-b-scrollspy:nav-scroller>
             <h5>Contents</h5>
             <b-list-group-item href="#item-1">File Naming</b-list-group-item>
             <b-list-group-item href="#item-2">Directory Naming</b-list-group-item>
