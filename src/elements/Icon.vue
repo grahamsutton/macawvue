@@ -13,7 +13,7 @@
  */
 
 // Valid supported sizes
-const SIZES = ['small', 'medium', 'large']
+const SIZES = ['xs', 'small', 'medium', 'large']
 
 export default {
   name: 'icon',
@@ -102,6 +102,10 @@ export default {
   &.small svg {
     width: $space-s;
     height: $space-s;
+  }
+  &.xs svg {
+    width: $space-xs;
+    height: $space-xs;
   }
 }
 </style>
