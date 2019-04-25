@@ -33,6 +33,7 @@ import Messages from '@/views/elements/Messages.vue'
 import Modal from '@/views/elements/Modal.vue'
 import Notifications from '@/views/elements/Notifications.vue'
 import Panels from '@/views/elements/Panels.vue'
+import PushNotifications from '@/views/elements/PushNotifications.vue'
 import Reorder from '@/views/elements/Reorder.vue'
 import StatsData from '@/views/elements/StatsData.vue'
 import Steps from '@/views/elements/Steps.vue'
@@ -249,6 +250,13 @@ export default [
     component: Panels,
     section: 'elements',
     active: false
+  },
+  {
+    path: '/elements/push-notifications',
+    name: 'Push Notifications',
+    component: PushNotifications,
+    section: 'elements',
+    active: true
   },
   {
     path: '/elements/reorder',
