@@ -14,7 +14,7 @@
             <b-list-group-item @click="scrollIntoView" href="#vue-coding-standards">Vue Coding Standards</b-list-group-item>
             <b-list-group-item @click="scrollIntoView" href="#directory-organization">Directory Organization</b-list-group-item>
             <b-list-group-item @click="scrollIntoView" href="#vue-files">Vue Files</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#presentational-and-data-driven-components">Presentational Components</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#presentational-and-data-driven-components">Presentational &amp; Data-Driven Components</b-list-group-item>
           </b-list-group>
         </div>
       </div>
@@ -163,7 +163,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
             </table>
 
             <!-- Vue Files (.vue) -->
-            <h3 id="vue-files"><a href="#vue-files">Vue Files (.vue)</a></h3>
+            <h3 id="vue-files">Vue Files (.vue)</h3>
             <p>One Vue file represents one component. This file contains all the HTML, CSS, and JS necessary for that one Vue component to work. This file is known as a <a href="https://vuejs.org/v2/guide/single-file-components.html " target="_blank">single-file component <icon name="external-link" size="xs"></icon></a>. These files end with the file extension <code>.vue</code>.</p>
 
             <!-- Creating New Vue Files/Components -->
@@ -302,7 +302,7 @@ export default {
   },
   methods: {
     scrollIntoView (evt) {
-      // evt.preventDefault()
+      evt.preventDefault()
 
       const href = evt.target.getAttribute('href')
       const el = href ? document.querySelector(href) : null
@@ -325,5 +325,19 @@ h1, h2, h3, h4, h5, h6 {
 .highlighter {
   font-weight: bold;
   background-color: yellow;
+}
+
+#nav-scroller {
+  position: relative; 
+  height: 100vh; 
+  overflow-y: scroll;
+}
+
+.nav {
+  .nav-item {
+    .nav-link {
+      padding: .2rem 1rem;
+    }
+  }
 }
 </style>
