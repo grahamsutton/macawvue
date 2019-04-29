@@ -84,6 +84,6 @@ span.highlight.light {
 
 #nav-scroller {
   position: relative; 
-  height: 100vh; 
-  overflow-y: scroll;
+  height: 100%;
+  // overflow-y: scroll;
 }
