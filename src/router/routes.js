@@ -290,7 +290,7 @@ export default [
     name: 'Tooltips',
     component: Tooltips,
     section: 'elements',
-    active: false
+    active: true
   },
   {
     path: '/elements/well',

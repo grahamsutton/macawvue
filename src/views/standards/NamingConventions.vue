@@ -163,7 +163,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
             </table>
 
             <!-- Vue Files (.vue) -->
-            <h3 id="item-8">Vue Files (.vue)</h3>
+            <h3 id="item-8"><a href="#item-8">Vue Files (.vue)</a></h3>
             <p>One Vue file represents one component. This file contains all the HTML, CSS, and JS necessary for that one Vue component to work. This file is known as a <a href="https://vuejs.org/v2/guide/single-file-components.html " target="_blank">single-file component <icon name="external-link" size="xs"></icon></a>. These files end with the file extension <code>.vue</code>.</p>
 
             <!-- Creating New Vue Files/Components -->
@@ -263,13 +263,31 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
 
             <!-- Data-Driven (Parent) Components -->
             <h4 id="item-9">Data-Driven (Parent) Components</h4>
-            <p>Data components should be responsible for managing application-specific logic and passing down relevant data to presentational (child) components. These types of components can render markup, but that markup but should very application specific and usually be very limited in its reuse.</p>
+            <p>Data components should be responsible for managing application-specific logic and passing down relevant data to presentational (child) components. These types of components can render markup, but that markup but should be minimal.</p>
 
-            <p>For example, a form component would be a good example of a data (parent) component since typically forms usually manage the sending and receiving of data and are usually geared to one specific business use. In some cases, a form could be reused in a few other places, but does not happen very often. Typically input fields vary from form to form depending on the business use case. However, the input fields, like datepickers, text inputs, text areas, and so on, can be reused in many forms. A form in this case would pass data to the input fields to render and emit data back to itself. In the form component, you would also manage things like form submission and responses from form submissions, etc.</p>
-            <p>Examples of data components could include things like:</p>
-            <ul>
-              <li>Any component that needs to make an AJAX call</li>
-            </ul>
+            <p>When planning to use Vue in the main application, the first thing you will need to do is create a data-driven component. This component will be responsible for encapsulating all your presentational components and for passing data down to those presentational components.</p>
+
+            <p>Use data-driven (parent) components <em>to manage data</em>, not to present it.</p>
+
+            <p>Data-driven components should be created under the <code>website/resources/js/components/data-driven/</code> directory.</p>
+
+<pre><code>
+ ├─app.sproutloud.com/
+ │ └─website/
+ │   └─resources/
+ |     └─js/
+ |       ├─src/
+ |         ├─components/
+ |           ├─presentational/
+ |           <span class="highlighter">└─data-driven/</span>
+ |         └─scripts/
+ |       └─tests/
+ |         ├─components/
+ |         └─scripts/
+</code></pre>
+
+            <h4 id="item-9">Naming Data-Driven &amp; Presentational Components</h4>
+            <p></p>
           </div>
         </div>
       </div>
