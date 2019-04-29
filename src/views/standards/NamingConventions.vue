@@ -6,15 +6,15 @@
         <div class="content-aux-nav multiple-items">
           <b-list-group v-b-scrollspy:nav-scroller>
             <h5>Contents</h5>
-            <b-list-group-item @click="scrollIntoView" href="#item-1">File Naming</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-2">Directory Naming</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-3">JS Version</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-4">JS Coding Standards</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-5">Vue Version</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-6">Vue Coding Standards</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-7">Directory Organization</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-8">Vue Files</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-9">Presentational Components</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#file-naming">File Naming</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#directory-naming">Directory Naming</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#javascript-version">JS Version</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#javascript-coding-standards">JS Coding Standards</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#vue-version">Vue Version</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#vue-coding-standards">Vue Coding Standards</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#directory-organization">Directory Organization</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#vue-files">Vue Files</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#presentational-and-data-driven-components">Presentational Components</b-list-group-item>
           </b-list-group>
         </div>
       </div>
@@ -39,7 +39,7 @@
           <div class="col-12">
 
             <!-- File Naming -->
-            <h3 id="item-1">File Naming</h3>
+            <h3 id="file-naming">File Naming</h3>
             <p>JavaScript and Vue component file names should be written in PascalCase, where each word begins and is separated by a capital letter with no spaces or underscores between each word.</p> 
 
             <div class="example-code good">
@@ -56,7 +56,7 @@ Mynewfile.js</code></pre>
             </div>
 
             <!-- Directory Naming -->
-            <h3 id="item-2">Directory Naming</h3>
+            <h3 id="directory-naming">Directory Naming</h3>
             <p>When creating new directories, they should be lowercase and preferably only one word long, however, if multiple words are needed, they should be separated with underscore “_” characters. Dashes “-”, and white spaces “ “ are not acceptable. Directory names should follow a clear and “possessive” path, meaning that each successive directory should “belong” to the directory before it. Directory names should also be clear and concise.</p>
 
             <div class="example-code good">
@@ -70,25 +70,25 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
             </div>
 
             <!-- JavaScript Version -->
-            <h3 id="item-3">JavaScript Version</h3>
+            <h3 id="javascript-version">JavaScript Version</h3>
             <p>We use <a href="http://es6-features.org" target="_blank">JavaScript ES6 <icon name="external-link" size="xs"></icon></a>, which is the latest stable version of the ECMAScript standard which supports the use of module <code>import</code>/<code>export</code>, arrow functions, constants (<code>const</code> keyword), <code>let</code> keyword, and a variety of other features. You are not forced to use ES6 syntax since the transpiler will interpret regular JavaScript with no issues whatsoever, however, we encourage that you try to leverage the power that some of the features of the new syntax offer so that you can write more concise code.</p>
 
             <!-- JavaScript Coding Standards -->
-            <h3 id="item-4">JavaScript Coding Standards</h3>
+            <h3 id="javascript-coding-standards">JavaScript Coding Standards</h3>
             <p>Our JavaScript standards follow <a href="https://github.com/airbnb/javascript" target="_blank">Airbnb’s Official JavaScript Style Guide <icon name="external-link" size="xs"></icon></a>. This is the most popular JavaScript Style Guide for modern JavaScript and contains many good examples and descriptions of why certain practices are good and why others are bad. It is extremely important that you take the time to read this.</p>
 
             <!-- Vue Version -->
-            <h3 id="item-5">Vue Version</h3>
+            <h3 id="vue-version">Vue Version</h3>
             <p>We use <a href="https://vuejs.org/v2/guide/" target="_blank">Vue.js 2.0 <icon name="external-link" size="xs"></icon></a> which is the latest major available version of Vue.</p>
 
             <p><a href="https://player.vimeo.com/video/247494684" target="_blank">Click on this link to watch a short video about the basics of Vue. <icon name="external-link" size="xs"></icon></a></p>
 
             <!-- Vue Coding Standards -->
-            <h3 id="item-6">Vue Coding Standards</h3>
+            <h3 id="vue-coding-standards">Vue Coding Standards</h3>
             <p>Our Vue coding standards follow the guidelines of the <a href="https://vuejs.org/v2/style-guide/" target="_blank">Official Vue Style Guide <icon name="external-link" size="xs"></icon></a>. Please make sure to read this documentation as it very important to understanding best practices and avoiding pitfalls when working with Vue. Knowing these standards can save you lots of headaches in the future.</p>
 
             <!-- Directory Organization -->
-            <h3 id="item-7">Directory Organization</h3>
+            <h3 id="directory-organization">Directory Organization</h3>
             <p>All Vue and JavaScript files should be created under the directory <code>website/resources/js/</code>. The directory structure is as follows:</p>
 <pre><code>├─app.sproutloud.com/
   │ └─website/
@@ -163,7 +163,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
             </table>
 
             <!-- Vue Files (.vue) -->
-            <h3 id="item-8"><a href="#item-8">Vue Files (.vue)</a></h3>
+            <h3 id="vue-files"><a href="#vue-files">Vue Files (.vue)</a></h3>
             <p>One Vue file represents one component. This file contains all the HTML, CSS, and JS necessary for that one Vue component to work. This file is known as a <a href="https://vuejs.org/v2/guide/single-file-components.html " target="_blank">single-file component <icon name="external-link" size="xs"></icon></a>. These files end with the file extension <code>.vue</code>.</p>
 
             <!-- Creating New Vue Files/Components -->
@@ -225,7 +225,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
             <p class="mt-3">If the <code>&lt;style&gt;</code> tag is used in a Vue Component, it must be succeeded by the <code>scoped</code> attribute. This <code>scoped</code> attribute will force the CSS to only apply to the markup within the component.  For example, you could target the <code>button</code> element in CSS directly (no class names or ids) and if it is in the <code>scoped</code> attribute, it will only apply styling to any <code>&lt;button&gt;</code> elements within the component and not to <code>&lt;button&gt;</code> elements in the app. Omitting the <code>scoped</code> attribute will affect all <code>&lt;button&gt;</code> elements in the app.</p>
 
             <!-- Presentational vs Data-Driven Components -->
-            <h3 id="item-9"><a href="#item-9">Presentational vs Data-Driven Components</a></h3>
+            <h3 id="presentational-and-data-driven-components"><a href="#presentational-and-data-driven-components">Presentational vs Data-Driven Components</a></h3>
             <p>In Vue, there is a concept of “data-driven” and “presentational” components, often also referred to as “parent” and “child” components respectively. <strong><u>This is an important concept to understand in Vue, as it the underlying principle that helps keep code DRY ("Don’t Repeat Yourself") and reusable.</u></strong></p>
 
             <!-- Presentational (Child) Components -->
@@ -262,7 +262,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
             <p>If you need to retrieve data from a presentational component, they can also be programmed to “emit” data, which essentially is an event on the component that you can create to broadcast data to a parent component without causing a dependency. <a href="https://vuejs.org/v2/guide/components.html#Emitting-a-Value-With-an-Event" target="_blank">Read more about that here <icon name="external-link" size="xs"></icon></a>.</p>
 
             <!-- Data-Driven (Parent) Components -->
-            <h4 id="item-9">Data-Driven (Parent) Components</h4>
+            <h4>Data-Driven (Parent) Components</h4>
             <p>Data components should be responsible for managing application-specific logic and passing down relevant data to presentational (child) components. These types of components can render markup, but that markup but should be minimal.</p>
 
             <p>When planning to use Vue in the main application, the first thing you will need to do is create a data-driven component. This component will be responsible for encapsulating all your presentational components and for passing data down to those presentational components.</p>
@@ -285,8 +285,6 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
  |         ├─components/
  |         └─scripts/
 </code></pre>
-
-            <h4 id="item-9">Naming Data-Driven &amp; Presentational Components</h4>
             <p></p>
           </div>
         </div>
@@ -301,6 +299,18 @@ import Icon from '@/elements/Icon.vue'
 export default {
   components: {
     Icon
+  },
+  methods: {
+    scrollIntoView (evt) {
+      // evt.preventDefault()
+
+      const href = evt.target.getAttribute('href')
+      const el = href ? document.querySelector(href) : null
+
+      if (el) {
+        this.$refs.content.scrollTop = el.offsetTop
+      }
+    }
   }
 }
 </script>
