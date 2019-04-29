@@ -14,6 +14,11 @@ pre {
 	    display: block;
 	}
 }
+
+h3 {
+    margin-top: 2em;
+}
+
 .example-code {
   border-radius: 2px;
   margin: 1.6em 0;
@@ -45,6 +50,7 @@ pre {
 	position: fixed;
 	top: 2em;
     right: 2em;
+    width: 260px;
 
     h5 {
 		background: #2a4a78;
@@ -55,9 +61,29 @@ pre {
 	    text-transform: uppercase;
 	}
 
+	.list-group {
+		max-height: 636px;
+    	overflow-y: auto;
+   	}
+
 	.list-group-item.active {
 		background-color: #0093c6;
 		border-color: #0093c6;
 		color: #fff;
 	}
+}
+
+span.highlight {
+    background-color: #fae765;
+    padding: 4px;
+}
+
+span.highlight.light {
+	background-color: #f2f2f2;
+}
+
+#nav-scroller {
+  position: relative; 
+  height: 100vh; 
+  overflow-y: scroll;
 }

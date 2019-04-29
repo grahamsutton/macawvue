@@ -6,17 +6,16 @@
         <div class="content-aux-nav multiple-items">
           <b-list-group v-b-scrollspy:nav-scroller>
             <h5>Contents</h5>
-            <b-list-group-item href="#item-1">File Naming</b-list-group-item>
-            <b-list-group-item href="#item-2">Directory Naming</b-list-group-item>
-            <b-list-group-item href="#item-3">JS Version</b-list-group-item>
-            <b-list-group-item href="#item-4">JS Coding Standards</b-list-group-item>
-            <b-list-group-item href="#item-5">Vue Version</b-list-group-item>
-            <b-list-group-item href="#item-6">Vue Coding Standards</b-list-group-item>
-            <b-list-group-item href="#item-7">Directory Organization</b-list-group-item>
-            <b-list-group-item href="#item-8">Vue Files</b-list-group-item>
-            <b-list-group-item href="#item-9">Presentational Components</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-1">File Naming</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-2">Directory Naming</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-3">JS Version</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-4">JS Coding Standards</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-5">Vue Version</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-6">Vue Coding Standards</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-7">Directory Organization</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-8">Vue Files</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-9">Presentational Components</b-list-group-item>
           </b-list-group>
-          </form>
         </div>
       </div>
       <!-- / inner navigation -->

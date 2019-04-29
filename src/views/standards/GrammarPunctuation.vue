@@ -4,40 +4,34 @@
       <!-- inner navigation -->
       <div class="col order-md-2 col-lg-3 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
         <div class="content-aux-nav multiple-items">
-          <form>
-            <div class="form-group m-0">
-              <div class="dropdown p-2">
-                  <b-dropdown v-b-scrollspy:nav-scroller id="dropdownMenuButton" data-toggle="dropdown" text="Dropdown Button" class="m-md-2">
-                  <b-dropdown-item @click="scrollIntoView" href="#item-1">Active voice</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-2">Buttons</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-3">Capitalization</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-4">Character Count</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-5">Checkboxes</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-6">Contractions</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-7">Currency</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-8">Dates</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-9">Decimals</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-10">Drop-down menus</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-11">Emoji</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-12">Headings and subheadings</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-13">Links</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-14">Lists</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-15">Percentages</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-16">Pronouns</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-17">Punctuation</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-18">File extensions</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-19">Radio Buttons</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-20">Ranges and spans</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-21">Slang and jargon</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-22">Telephone numbers</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-23">Text formatting</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-24">Time</b-dropdown-item>
-                  <b-dropdown-item @click="scrollIntoView" href="#item-25">Tooltips</b-dropdown-item>
-                </b-dropdown>
-                
-              </div>
-            </div>
-          </form>
+          <b-list-group v-b-scrollspy:nav-scroller>
+            <h5>Contents</h5>           
+              <b-list-group-item @click="scrollIntoView" href="#item-1">Active voice</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-2">Buttons</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-3">Capitalization</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-4">Character Count</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-5">Checkboxes</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-6">Contractions</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-7">Currency</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-8">Dates</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-9">Decimals</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-10">Drop-down menus</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-11">Emoji</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-12">Headings and subheadings</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-13">Links</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-14">Lists</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-15">Percentages</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-16">Pronouns</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-17">Punctuation</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-18">File extensions</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-19">Radio Buttons</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-20">Ranges and spans</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-21">Slang and jargon</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-22">Telephone numbers</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-23">Text formatting</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-24">Time</b-list-group-item>
+              <b-list-group-item @click="scrollIntoView" href="#item-25">Tooltips</b-list-group-item>
+            </b-list-group>
         </div>
       </div>
       <!-- / inner navigation -->

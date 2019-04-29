@@ -12,7 +12,7 @@
         </div>
         <div class="row"><div class="col-md-12"><hr></div></div>
         <div class="row">
-          <div class="col-md-12 text-justify mb-4">
+          <div class="col-md-12 text-justify">
             <p>As a general rule, we support the latest 2 versions for supported browsers. Our users will see <a href="https://app.sproutloud.com/index/browser" target="_blank">this page</a> if they are using a browser that is unsupported.</p>
           </div>
         </div>
