@@ -25,7 +25,7 @@
         <div class="row">
 
           <!-- Title Container-->
-          <div class="col-12 col-lg-10 titles-ct mt-0">
+          <div class="col-12 titles-ct mt-0">
             <h1>Naming Conventions</h1>
             <h2>In order to maintain common and best practices across the department, we have decided to standardize on using specific practices and implementations for JavaScript and Vue.</h2>
           </div>
@@ -93,7 +93,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
 <pre><code>├─app.sproutloud.com/
   │ └─website/
 + │   └─resources/
-+ |     <span class="highlighter">└─js/</span>
++ |     <span class="highlight">└─js/</span>
 + |       ├─src/
 + |         ├─components/
 + |           ├─presentational/
@@ -105,7 +105,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
 + |           └─data-driven/
 + |         └─scripts/</code></pre>
 
-            <p>Throughout the rest of this document, any diagrams or models that contain green text will imply new additions and red text will imply removal, just like it does in git. This document will also use <span class="highlighter">highlighting</span> to point out something you should focus on.</p>
+            <p>Throughout the rest of this document, any diagrams or models that contain green text will imply new additions and red text will imply removal, just like it does in git. This document will also use <span class="highlight">highlighting</span> to point out something you should focus on.</p>
 
             <p>Each directory in the new directory structure is intended to hold specific types of files.</p>
 <pre><code>├─app.sproutloud.com/
@@ -192,7 +192,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
   │   └─resources/
   |     └─js/
   |       ├─src/
-  |         <span class="highlighter">├─components/</span>
+  |         <span class="highlight">├─components/</span>
   |         └─scripts/
   |       └─tests/
   |         ├─components/
@@ -242,7 +242,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
  |     └─js/
  |       ├─src/
  |         ├─components/
- |           <span class="highlighter">├─presentational/</span>
+ |           <span class="highlight">├─presentational/</span>
  |           └─data-driven/
  |         └─scripts/
  |       └─tests/
@@ -279,7 +279,7 @@ website/resources/js/scripts/member/order-types/MyNewFile.js  // Don't kebab cas
  |       ├─src/
  |         ├─components/
  |           ├─presentational/
- |           <span class="highlighter">└─data-driven/</span>
+ |           <span class="highlight">└─data-driven/</span>
  |         └─scripts/
  |       └─tests/
  |         ├─components/
@@ -316,17 +316,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1, h2, h3, h4, h5, h6 {
-  a {
-    color: #000;
-  }
-}
-
-.highlighter {
-  font-weight: bold;
-  background-color: yellow;
-}
-
 #nav-scroller {
   position: relative; 
   height: 100vh; 

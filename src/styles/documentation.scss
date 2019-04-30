@@ -1,3 +1,29 @@
+@import "variables";
+
+.section-ct {
+  font-weight: 300;
+
+  .titles-ct {
+    h2 {
+      font-size: 1.7rem;
+      font-weight: 300;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .auxiliar-nav-ct {
+    background: #f8f9fd;
+    position: relative;
+
+    .content-aux-nav {
+      position: fixed;
+    }
+  }
+}
+
 .code-style {
 	.rounded-square {
 		-webkit-border-top-left-radius: 4px;

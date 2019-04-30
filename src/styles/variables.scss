@@ -1,18 +1,37 @@
-// Variables
-@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700');
+// Font
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600');
 
 $exo2-font: 'Exo 2', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
 
+$font-heading: 'Exo 2', Helvetica, Arial, sans-serif;
+$font-text: 'Roboto', Helvetica, Arial, sans-serif;
+
+$weight-bold: 600;
+$weight-normal: 400;
+$weight-light: 300;
+
+$line-height-m: 1.6;
+$line-height-s: 1.3;
+$line-height-xs: 1;
+
+// Colors
 $color-primary: rgb(53, 176, 130);
 $color-primary-hover: rgb(0, 149, 95);
+
 $color-secondary: rgb(0, 155, 178);
 $color-secondary-hover: rgb(5, 123, 140);
+
 $color-danger: rgb(233, 79, 61);
 $color-danger-hover: rgb(215, 57, 38);
+
 $color-success: rgb(112, 191, 73);
 $color-success-hover: rgb(89,152,58);
+
 $color-info: rgb(69, 108, 170);
 $color-info-hover: rgb(44, 69, 109);
+
 $color-warning: rgb(247, 179, 52);
 $color-warning-text: rgb(237, 118, 36);
 $color-warning-hover: rgb(237, 118, 36);
@@ -32,46 +51,26 @@ $color-black: rgb(0, 0, 0);
 
 $color-silver: rgb(127, 136, 145);
 $color-link: rgb(69, 108, 170);
-$color-ucla-gold-light: rgb(255, 204, 77);
-$color-cloud: rgb(233, 243, 253);
-$color-oxford-blue: rgb(0, 38, 77);
 
-
-$color-vermilion: rgb(235, 59, 36);
-$size-xxxl: 64px;
-$size-xxl: 48px;
-$size-xl: 36px;
-$size-l: 24px;
-$size-m: 16px;
-$size-s: 13px;
-$size-xs: 11px;
-$font-heading: "Fira Sans", Helvetica, Arial, sans-serif;
-$font-text: "Fira Sans", Helvetica, Arial, sans-serif;
-$weight-bold: 700;
-$weight-semi-bold: 600;
-$weight-normal: 400;
-$weight-light: 300;
+// Opacity
 $opacity-disabled: 0.5;
-$height-footer: 64px;
-$tappable-square: 44px;
+
+// Transitions
 $duration-quickly: 0.08s;
 $duration-slowly: 0.5s;
+
+// Z-Modal
 $z-index-modal: 9999;
 $z-index-sticky: 100;
-$media-query-m: (
-  min-width: 768px,
-);
-$media-query-l: (
-  min-width: 1024px,
-);
+
+// Shadow
 $shadow-s: 0 0 0 1px rgba(92, 106, 196, 0.1);
-$spacing-xl: 2px;
-$spacing-l: 1px;
-$spacing-m: 0;
-$spacing-s: -0.5px;
-$spacing-xs: -1px;
-$radius-default: 3px;
+
+// Radius
+$radius-default: 4px;
 $radius-circle: 50%;
+
+// Spacing
 $space-xxl: 128px;
 $space-xl: 64px;
 $space-l: 48px;
@@ -79,6 +78,16 @@ $space-m: 24px;
 $space-s: 16px;
 $space-xs: 8px;
 $space-xxs: 4px;
-$line-height-m: 1.6;
-$line-height-s: 1.3;
-$line-height-xs: 1;
+
+// Media Queries
+$media-query-m: (
+  min-width: 768px,
+);
+
+$media-query-l: (
+  min-width: 1024px,
+);
+
+// Mobile
+$height-footer: 64px;
+$tappable-square: 44px;

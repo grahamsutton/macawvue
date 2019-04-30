@@ -9,6 +9,7 @@ import './styles/custom.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vue-hljs/dist/vue-hljs.min.css'
+import './styles/documentation.scss'
 
 Vue.use(BootstrapVue)
 Vue.use(vueHljs)

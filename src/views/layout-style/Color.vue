@@ -29,8 +29,8 @@
           </div> 
 
           <!-- Page description text -->   
-          <div class="col-12">
-            <p id="item-1">Our primary action color is <span class="code-style"><span class="rounded-square bg-primary"></span><code>$color-primary</code></span>. It is used strategically to call attention to an element, therefore we only use it once on a page. It should only be used for <em>positive, progressive actions</em>. The primary button guides users on what action they should take next, e.g. "Submit", "Yes, I agree".</p>
+          <div id="item-1" class="col-12">
+            <p>Our primary action color is <span class="code-style"><span class="rounded-square bg-primary"></span><code>$color-primary</code></span>. It is used strategically to call attention to an element, therefore we only use it once on a page. It should only be used for <em>positive, progressive actions</em>. The primary button guides users on what action they should take next, e.g. "Submit", "Yes, I agree".</p>
 
             <p>The secondary color is <span class="code-style"><span class="rounded-square bg-secondary"></span><code>$color-secondary</code></span>. The secondary button supports discovery and exploration but should not be directly associated with a key action. In other words, users won't need to click that button to move forward, but <em>it is an optional action</em>.</p>
           
@@ -191,3 +191,33 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    scrollIntoView (evt) {
+      evt.preventDefault()
+      const href = evt.target.getAttribute('href')
+      const el = href ? document.querySelector(href) : null
+      if (el) {
+        this.$refs.content.scrollTop = el.offsetTop
+      }
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+#nav-scroller {
+  position: relative; 
+  height: 100vh; 
+  overflow-y: scroll;
+}
+
+.nav {
+  .nav-item {
+    .nav-link {
+      padding: .2rem 1rem;
+    }
+  }
+}
+</style>

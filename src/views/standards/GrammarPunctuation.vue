@@ -6,6 +6,7 @@
         <div class="content-aux-nav multiple-items">
           <b-list-group v-b-scrollspy:nav-scroller>
             <h5>Contents</h5>           
+              <b-list-group-item @click="scrollIntoView" href="#item-0">Abbreviations</b-list-group-item>
               <b-list-group-item @click="scrollIntoView" href="#item-1">Active voice</b-list-group-item>
               <b-list-group-item @click="scrollIntoView" href="#item-2">Buttons</b-list-group-item>
               <b-list-group-item @click="scrollIntoView" href="#item-3">Capitalization</b-list-group-item>
