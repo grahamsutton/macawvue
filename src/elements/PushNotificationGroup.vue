@@ -10,6 +10,7 @@
   position: fixed;
   bottom: 30px;
   right: 50px;
+  z-index: 2;
 
   .m-notification {
     margin-bottom: 10px !important;
