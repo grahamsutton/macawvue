@@ -7,7 +7,8 @@
           <b-list-group v-b-scrollspy:nav-scroller>
             <h5>Contents</h5>
             <b-list-group-item @click="scrollIntoView" href="#item-1">Color Theory</b-list-group-item>
-            <b-list-group-item @click="scrollIntoView" href="#item-2">Palette</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#item-2">Color Palette</b-list-group-item>
+            <b-list-group-item @click="scrollIntoView" href="#black-palette">Black Palette</b-list-group-item>
           </b-list-group>
         </div>
       </div>
@@ -20,7 +21,7 @@
           <!-- Title Container-->
           <div class="col-12 titles-ct mt-0">
             <h1>Color</h1>
-            <h2>Variables are the atoms of Macaw — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values in order to maintain a scalable and consistent visual system for UI development.</h2>
+            <h2>A consistent color palette is an essential asset in the communication resources of any design system. Colors have a huge impact in a system. They define the visual identity, bring harmony, communicate, etc.</h2>
           </div>
 
           <!-- / Title Container-->
@@ -40,6 +41,11 @@
             
             <p>A disabled color should not be used without a clear call to action to the next state. It should be used to reinforce the importance of missing information or as a way of reiterating that the next progression in the customer's journey is unattainable. We also use tooltips when hovering over a disabled button to provide more information on why this is disabled and what they can do to progress. It's important that the user has a clear way to continue.</p>
           </div>
+          
+          <div class="col-12">
+            <hr>
+          </div> 
+
           <div class="col-12">
             <h2 id="item-2" class="mb-3">Color Palette</h2>
             <ul class="list-palette row">
@@ -121,7 +127,13 @@
                     </div>
                 </li>
             </ul>
-            <div class="black-palette">
+          </div>
+          
+          <div class="col-12">
+             <hr>
+          </div> 
+
+          <div id="black-palette" class="col-12 black-palette">
               <h2>Black Palette</h2>
               <b-list-group>
                 <b-list-group-item class="d-flex justify-content-between align-items-center color-black">
@@ -186,7 +198,7 @@
               </b-list-group>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
     </div>
   </div>

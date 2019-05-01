@@ -59,7 +59,7 @@ $enable-print-styles: true;
 
 
 // Links
-$link-color: theme-color('primary');
+$link-color: $blue;
 $link-decoration: none;
 $link-hover-color: #2c456d;
 $link-hover-decoration: none;
@@ -86,7 +86,7 @@ $h6-font-size: 1rem;
 $headings-margin-bottom: ($spacer / 2);
 $headings-font-family: inherit;
 $headings-font-weight: 500;
-$headings-line-height: 1.1;
+$headings-line-height: 1.25;
 
 $small-font-size: 80%;
 $text-muted: $gray-600;

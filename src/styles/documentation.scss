@@ -10,10 +10,6 @@
     }
   }
 
-  h3 {
-    font-size: 1.5rem;
-  }
-
   .auxiliar-nav-ct {
     background: #f8f9fd;
     position: relative;
@@ -68,7 +64,9 @@ pre {
 }
 
 h3 {
-    margin-top: 2em;
+    margin-top: 1em;
+
+    a { color: inherit; }
 }
 
 .example-code {
@@ -143,7 +141,6 @@ h3 {
 
 span.highlight {
     background-color: #fae765;
-    padding: 4px;
 }
 
 span.highlight.light {
