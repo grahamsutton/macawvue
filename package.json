@@ -1,9 +1,16 @@
 {
-  "name": "macaw",
+  "name": "@sproutloud/macaw",
   "version": "1.0.0",
   "description": "SproutLouds Design System",
   "author": "Amanda Bloomfield",
   "private": true,
+  "files": [
+    "src/assets/",
+    "src/elements",
+    "src/styles",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
