@@ -41,6 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'src/styles/variables.scss';
 .m-button {
   display: inline-block;
   font-weight: 400;
@@ -65,16 +66,42 @@ export default {
 }
 
 .m-button-primary {
-  background-color: #35b082;
-  border-color: #35b082;
+  background-color: $color-primary;
   color: #fff;
+
+  &:hover, &:focus {
+    background-color: $color-primary-hover;
+  }
 }
 
-.m-button-primary:focus,
-.m-button-primary:hover {
+.m-button-secondary {
+  background-color: $color-secondary;
   color: #fff;
-  background-color: #35b082;
-  border-color: #35b082;
+
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+}
+
+.m-button-danger {
+  background-color: $color-danger;
+  color: #fff;
+
+  &:hover, &:focus {
+    background-color: $color-danger-hover;
+  }
+}
+
+.m-button-outline {
+  background-color: $color-white;
+  border-color: $color-secondary;
+  color: $color-secondary;
+
+  &:hover, &:focus {
+    background-color: $color-secondary-hover;
+    border-color: $color-secondary-hover;
+    color: $color-white;
+  }
 }
 
 .m-button-link {

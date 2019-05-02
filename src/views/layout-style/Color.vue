@@ -232,4 +232,5 @@ export default {
     }
   }
 }
+.badge-light { color: #333; }
 </style>

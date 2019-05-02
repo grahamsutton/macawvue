@@ -1,109 +1,86 @@
 <template>
   <div>
-
-    <!-- inner navigation -->
-    <div class="col order-md-2 col-lg-4 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
-      <div class="content-aux-nav multiple-items"></div>
-    </div>
-    <!-- / inner navigation -->
-
-    <!-- main container block -->
-    <div class="col-12 col-md-8 order-md-1 col-lg-7 offset-lg-1 py-5" id="nav-scroller" ref="content">
-      <!-- Here goes the content of the page -->
-      <div class="row">
-        <!-- Title Container-->
-        <div class="col-12 col-lg-10 titles-ct mt-0">
-          <h1>Buttons</h1>
-          <h2>Use the button component for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</h2>
-        </div>
-        <!-- / Title Container-->
-        <div class="col-12">
-          <hr>
-        </div>
-        <!-- Page description text -->
-        <div class="col-12 text-justify">
-          <p>More variants coming soon.</p>
-        </div>
-        <!-- / Page description text -->
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <notification variant="warning">
-            When using the <code>Button.vue</code> component, you <strong>must</strong> provide an alias for it when registering the component. This is because Vue will attempt to translate <code>Button.vue</code> in PascalCase to <code>&lt;button&gt;</code> in kebab-case, however, <code>&lt;button&gt;</code> is already a reserved HTML element. See the Vue example below to see how to provide an alias for the component name.
-          </notification>
-        </div>
-      </div>
-        
-      <!-- Props -->
-      <div class="row">
-        <div class="col-md-12 mt-4">
-          <props-table>
-            <props-table-row
-              prop="variant"
-              type="String"
-              :required="false"
-              default-val="primary"
-              description="Valid options are <code>primary</code>, <code>link</code>."
-            />
-          </props-table>
-        </div>
-      </div>
-
-      <!-- Events -->
-      <div class="row">
-        <div class="col-md-12 mt-4">
-          <events-table>
-            <events-table-row
-              event="click"
-              description="Accepts a callback to perform when the button is clicked."
-            />
-          </events-table>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <h3>Examples</h3>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 my-2" id="how-to-use">
-          <!-- Live Example container -->
-          <div class="live-example-ct rounded-top">
-            <sl-button variant="primary" @click="handleClick">Primary Button</sl-button>
-            <sl-button variant="link">Link Button</sl-button>
-          </div>
-          <!-- / Live Example container -->
-
-          <div class="row mt-5">
-            <div class="col-md-12">
-              <h3>How to Use</h3>
-              <p>Import the <code>Button</code> component from the <code>@sproutloud/macaw</code> package into the <code>components</code> section of your Vue component. You will need to provide an alias for this type of component so that it does not conflict with HTML's <code>&lt;button&gt;</code>. You can provide an alias simply by providing a key in the components section where you register your Vue components with the desired alias for the tag.
-
-              <p>This will allow you to use the <code>&lt;your-alias&gt;</code> tag to render a button. In the example below, we use <code>'sl-button'</code> as our alias for the button component, which allows us to render a button using <code>&lt;sl-button&gt;</code>.</p>
-
-              <p>You can also use the <code>variant</code> property to change the color and style of a button.</p>
+    <div class="row">
+        <!-- inner navigation -->
+        <div class="col order-md-2 col-lg-3 offset-lg-1 px-0 ml-0 auxiliar-nav-ct">
+            <div class="content-aux-nav multiple-items">
+                <b-list-group v-b-scrollspy:nav-scroller>
+                    <h5>Contents</h5>           
+                    <b-list-group-item @click="scrollIntoView" href="#item-0">Item 1</b-list-group-item>
+                    <b-list-group-item @click="scrollIntoView" href="#item-1">Item 2</b-list-group-item>
+                </b-list-group>
             </div>
-          </div>
-
-          <!-- Code Example container -->
-          <div v-highlight>
-            <pre>
-              <code class="html">
-                {{ code }}
-              </code>
-              <code class="js">
-                {{ vue }}
-              </code>
-            </pre>
-          </div>
-          <!-- / Code Example container -->
         </div>
-      </div>
+        <!-- / inner navigation -->
+
+        <!-- main container block -->
+        <div class="col-12 col-md-8 order-md-1 col-lg-8 offset-lg-1 py-5 pr-5" id="nav-scroller" ref="content">
+            <div class="row">
+                <div class="col-12 col-lg-12 titles-ct mt-0">
+                    <h1>Buttons</h1>
+                    <h2>Use the button component for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</h2>
+                </div>
+                
+                <div class="col-12">
+                    <hr>
+                </div>             
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <notification variant="warning">
+                  When using the <code>Button.vue</code> component, you <strong>must</strong> provide an alias for it when registering the component. This is because Vue will attempt to translate <code>Button.vue</code> in PascalCase to <code>&lt;button&gt;</code> in kebab-case, however, <code>&lt;button&gt;</code> is already a reserved HTML element. See the Vue example below to see how to provide an alias for the component name.
+                </notification>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12 mt-3" id="item-0">
+                <h3>Button Variations</h3>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Button</th>
+                      <th scope="col">Code</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><sl-button variant="primary" @click="handleClick">Main Action</sl-button></td>
+                      <td class="button-example">
+                        <code>&lt;sl-button variant="primary" @click="handleClick"&gt;Primary Button&lt;/sl-button&gt;</code>
+                      </td>
+                      <td>Main creation actions. To call attention to an action on a form, or highlight the strongest call to action on a page. This should appear once per screen (not including modals). Not every screen requires a primary button. <em>Create Claim</em>, <em>Save Changes</em>, <em>Submit</em>.</td>
+                    </tr>
+                    <tr>
+                      <td><sl-button variant="secondary" @click="handleClick">Informational Action</sl-button></td>
+                      <td>
+                        <code>&lt;sl-button variant="secondary"&gt;Secondary Button&lt;/sl-button&gt;</code>
+                      </td>
+                      <td>Users won't need to click this button to move forward, it is an optional action. <em>View</em>, <em>Apply</em>, <em>Continue</em>.</td>
+                    </tr>
+                    <tr>
+                      <td><sl-button variant="outline" @click="handleClick">Secondary Action</sl-button></td>
+                      <td>
+                        <code>&lt;sl-button variant="outline"&gt;Secondary Action&lt;/sl-button&gt;</code>
+                      </td>
+                      <td>Users won't need to click this button to move forward, it is an optional action. <em>Edit</em>, <em>Enter promo code</em>, <em>Go Back</em>, <em>Download CSV</em>, <em>Save Progress</em>.</td>
+                    </tr>
+                  </tbody>
+              </table>             
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12 mt-3" id="item-1">
+                <h3>Section Header</h3>
+                <p>We use sans-serif fonts for most of our type, the exception being when you want to display code then you should defer to monospace fonts.</p>          
+              </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
@@ -123,34 +100,36 @@ export default {
     Notification,
     'sl-button': Button
   },
-  data () {
-    return {
-      code: `
-        <sl-button variant="primary" @click="handleClick">Primary Button</sl-button>
-        <sl-button variant="link">Link Button</sl-button>
-      `,
-      vue: `
-        import Button from '@sproutloud/macaw/src/elements/Button.vue'
-
-        export default {
-          ...
-          components: {
-            'sl-button': Button  // must give alias to button to avoid naming conflicts with HTML's <button>
-          },
-          methods: {
-            handleClick () {
-              alert('Button was clicked')
-            }
-          }
-          ...
-        }
-      `
-    }
-  },
   methods: {
     handleClick () {
       alert('Button was clicked')
+    },
+
+    scrollIntoView (evt) {
+      evt.preventDefault()
+      const href = evt.target.getAttribute('href')
+      const el = href ? document.querySelector(href) : null
+      if (el) {
+        this.$refs.content.scrollTop = el.offsetTop
+      }
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#nav-scroller {
+  position: relative; 
+  height: 100vh; 
+  overflow-y: scroll;
+}
+
+.nav {
+  .nav-item {
+    .nav-link {
+      padding: .2rem 1rem;
+    }
+  }
+}
+.button-example { min-width: 300px; }
+</style>

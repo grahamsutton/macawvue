@@ -1,3 +1,6 @@
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+
 // Brand Colors
 $blue: #456caa;
 $indigo: #6610f2;
@@ -66,7 +69,7 @@ $link-hover-decoration: none;
 
 
 // Fonts
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 $font-family-base: $font-family-sans-serif;
 $font-size-base: 1rem;
@@ -240,7 +243,6 @@ $dropdown-link-disabled-color: $gray-600;
 $dropdown-item-padding-y: 0.25rem;
 $dropdown-item-padding-x: 1.5rem;
 $dropdown-header-color: $gray-600;
-
 $dropdown-inner-border-radius: 4px;
 
 
@@ -532,5 +534,4 @@ $enable-grid-classes: true;
 $enable-print-styles: true;
 $enable-validation-icons: true;
 
-@import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
