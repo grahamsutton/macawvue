@@ -104,9 +104,27 @@ export default {
   }
 }
 
+.m-button-tertiary {
+  background-color: $color-white;
+  border-color: $color-black-54;
+  color: $color-black-54;
+
+  &:hover, &:focus {
+    background-color: $color-secondary-hover;
+    border-color: $color-secondary-hover;
+    color: $color-white;
+  }
+}
+
 .m-button-link {
   background-color: transparent;
   border-color: transparent;
-  color: #616161;
+  color: $color-link;
+
+  &:hover, &:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-link-hover;
+  }
 }
 </style>
