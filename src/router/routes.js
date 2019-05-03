@@ -3,6 +3,7 @@ import About from '@/views/introduction/About.vue'
 import FAQ from '@/views/introduction/FAQ.vue'
 
 // Standards
+import LawOfMacaw from '@/views/standards/LawOfMacaw.vue'
 import NamingConventions from '@/views/standards/NamingConventions.vue'
 import VoiceTone from '@/views/standards/VoiceTone.vue'
 import GrammarPunctuation from '@/views/standards/GrammarPunctuation.vue'
@@ -65,6 +66,13 @@ export default [
   },
 
   // Standards
+  {
+    path: '/standards/law-of-macaw',
+    name: 'Law of Macaw',
+    component: LawOfMacaw,
+    section: 'standards',
+    active: true
+  },
   {
     path: '/standards/naming-conventions',
     name: 'Naming Conventions',
